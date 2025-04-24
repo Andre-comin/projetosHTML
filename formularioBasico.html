@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Cadastro</title>
+</head>
+<body>
+    <h1>Formulário para cadastro de pessoa física</h1>
+    <h3>Informações pessoais</h3>
+    <form name="formulario" method="post">
+        <label for="nomeCompleto">
+            Nome completo
+            <input type="text" name="nomeCompleto" id="nomeCompleto">
+        </label><br>
+        <label for="email">
+            E-mail
+            <input type="email" name="email" id="email">
+        </label><br>
+        <label for="senha">
+            Senha:
+            <input type="password" name="senha" id="senha" minlength="8" maxlength="15">
+        </label><br>
+        Gênero <br>
+        <label for="masculino">
+            Masculino
+            <input type="radio" name="genero" id="masculino" value="masculino">
+        </label><br>
+        <label for="feminino">
+            Feminino
+            <input type="radio" name="genero" id="feminino" value="feminino">
+        </label><br>
+        <label for="outros">
+            Outros
+            <input type="radio" name="genero" id="outros" value="outros">
+        </label><br>
+        Deseja receber novidades por e-mail? <br>
+        <label for="novidadesSim">
+            Sim
+            <input type="radio" name="novidades" id="novidadesSim" value="sim">
+        </label><br>
+        <label for="novidadesNao">
+            Não
+            <input type="radio" name="novidades" id="novidadesNao" value="nao">
+        </label>
+        <h3>Endereço:</h3>
+        <label for="estado">
+            Estado
+            <select name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="santaCatarina">Santa Catarina</option>
+                <option value="parana">Parana</option>
+                <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+            </select><br>
+       </label>
+       <label for="cidade">
+            Cidade
+            <input type="text" name="cidade" id="cidade">
+        </label><br>
+        Complemento <br>
+        <label for="complemento">
+            <textarea name="complemento" id="complemento" rows="5" cols="20"></textarea>
+        </label> <br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar informações</button>
+    </form>  
+</body>
+</html>
