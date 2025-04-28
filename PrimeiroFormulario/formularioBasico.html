@@ -7,8 +7,9 @@
 </head>
 <body>
     <h1>Formulário para cadastro de pessoa física</h1>
-    <h3>Informações pessoais</h3>
-    <form name="formulario" method="post">
+    <fieldset>
+        <legend>Informações pessoais</legend>
+        <form name="formulario" method="post">
         <label for="nomeCompleto">
             Nome completo
             <input type="text" name="nomeCompleto" id="nomeCompleto">
@@ -21,6 +22,7 @@
             Senha:
             <input type="password" name="senha" id="senha" minlength="8" maxlength="15">
         </label><br>
+    </fieldset>
         Gênero <br>
         <label for="masculino">
             Masculino
