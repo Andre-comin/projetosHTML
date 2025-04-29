@@ -8,53 +8,53 @@
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="menu">
-            <h2>Acesso a outros serviços</h2><br>
+    <nav>
+        <h2>Acesso a outros serviços</h2><br>
             <ul>
                 <li><a href="primeiroSite.html">Pagina inicial</a></li>
                 <li><a href="sobre.html">Sobre a clinica</a></li>
                 <li><a href="horario.html">Horários de atendimento</a></li>
             </ul>
-        </div>
-        <div class="main">
-            <div class="header">
-                <img src="banner principal.jpg" width="200" height="100">
-            </div>
-    
-            <div class="content">
-                <form action="">
-                    <fieldset>
-                        <legend>Informações para cadastro do exame</legend>
-                        Nome: <input type="text"><br>
-                    Telefone: <input type="number"> <br>
-                    E-mail: <input type="email"> <br>
-                    Tipo de serviço:
-                    <select name="" id="">
-                        <option value="">Selecione o serviço</option>
-                        <option value="psicologia">Psicologia</option>
-                        <option value="pediatria">Pediatria</option>
-                        <option value="oftamologia">Oftamologia</option>
-                    </select> <br>
-                    Observação: <br> 
-                    <textarea name="" id="" rows="5" cols="30"></textarea> <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
-                    </fieldset> 
-                </form> <br> 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.4682769538326!2d-48.88141192479726!3d-26.311332177010772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb00ab64e9485%3A0x5e672a033d3c8518!2sR.%20Alzino%20Kieper%2C%20152%20-%20S%C3%A3o%20Marcos%2C%20Joinville%20-%20SC%2C%2089214-342!5e0!3m2!1spt-BR!2sbr!4v1745608176668!5m2!1spt-BR!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-                
-            </div>
-    
-            <div class="footer">
-                <h2>Contato</h2>
-                <ul>
-                    <li><strong>Endereço da clinica:</strong>Rua fulado de tal, 125, Americo</li>   
-                    <li><strong>Telefone/whatsapp:</strong> (47)9 97905650</li>
-                    <li><strong>Email:</strong> clinicatop@gmail.com</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </nav>
+    <header>
+        <img src="banner principal.jpg" width="200" height="100">
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Informações para cadastro do exame</legend>
+                        <label for="nome">Nome:</label> <input type="text" id="nome"><br>
+                        <label for="telefone">Telefone:</label> <input type="number" id="telefone"> <br>
+                        <label for="email">E-mail:</label> <input type="email" id="email"> <br>
+                        Tipo de serviço:
+                        <select name="" id="">
+                            <option value="">Selecione o serviço</option>
+                            <option value="consultasGerais">Consultas gerais</option>
+                            <option value="vacinacao">Vacinação</option>
+                            <option value="banhoTosa">Banho e Tosa</option>
+                        </select> <br>
+                        Observação: <br> 
+                        <textarea name="" id="" rows="5" cols="30"></textarea> <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                </fieldset> 
+            </form> <br>
+        </section>
+        <aside>
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.4682769538326!2d-48.88141192479726!3d-26.311332177010772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb00ab64e9485%3A0x5e672a033d3c8518!2sR.%20Alzino%20Kieper%2C%20152%20-%20S%C3%A3o%20Marcos%2C%20Joinville%20-%20SC%2C%2089214-342!5e0!3m2!1spt-BR!2sbr!4v1745608176668!5m2!1spt-BR!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <figcaption>Mapa com endereço da clínica</figcaption>
+            </figure>  
+        </aside>       
+    </main>
+     <footer>
+        <h2>Contato</h2>
+            <ul>
+                <li><strong>Endereço da clinica:</strong>Rua fulado de tal, 125, Americo</li>   
+                <li><strong>Telefone/whatsapp:</strong> (47)9 97905650</li>
+                <li><strong>Email:</strong> clinicatop@gmail.com</li>
+            </ul>
+    </footer>
 </body>
 </html>
